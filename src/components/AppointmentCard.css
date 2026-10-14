@@ -1,0 +1,56 @@
+.appointment-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid #0f766e;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.appointment-card .specialty {
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.appointment-card .reason {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.appointment-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.edit-btn {
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.edit-btn:hover {
+    background-color: #0c5d56;
+}
+
+.cancel-btn {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cancel-btn:hover {
+    background-color: #b91c1c;
+}

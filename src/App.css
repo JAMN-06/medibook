@@ -1,0 +1,295 @@
+:root {
+    --bg-primary: #f8fafc;
+    --bg-secondary: white;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.doctor-card,
+.appointment-card,
+.slots-list li,
+.confirm-dialog {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filters input,
+.filters select {
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.filters input {
+    flex: 1;
+}
+
+.doctor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.empty-state {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #0f766e;
+    text-decoration: none;
+}
+
+.doctor-detail {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.detail-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.location {
+    color: #64748b;
+}
+
+.bio {
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.slots-list {
+    list-style: none;
+    padding: 0;
+}
+
+.slots-list li {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.book-btn {
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.book-btn:hover {
+    background-color: #0c5d56;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    max-width: 500px;
+}
+
+.booking-form label {
+    font-weight: 600;
+    margin-top: 0.6rem;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    padding: 0.6rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.error-text {
+    color: #dc2626;
+    font-weight: 500;
+}
+
+
+.filters input,
+.filters select,
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    color: #1e293b;
+    background-color: white;
+}
+
+
+::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+a {
+    color: #0f766e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.doctor-info h3 {
+    color: #1e293b;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+.appointment-card {
+    background: white;
+    color: #1e293b;
+}
+
+.appointment-card .specialty {
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.appointment-card .reason {
+    color: #475569;
+    font-style: italic;
+}
+
+
+.empty-state a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.empty-state a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar text */
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1e293b !important;
+}
+
+
+.page-container h1 {
+    color: #1e293b !important;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+
+.page-container h1 {
+    color: #1e293b !important;
+}
+
+
+.empty-state p {
+    color: #64748b !important;
+}
+
+.empty-state {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+}
+
+
+.empty-state .book-btn,
+.empty-state a {
+    color: white !important;
+    background-color: #0f766e;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.empty-state .book-btn:hover,
+.empty-state a:hover {
+    background-color: #0c5d56;
+}
